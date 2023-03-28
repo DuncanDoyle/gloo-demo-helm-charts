@@ -1,0 +1,5 @@
+## Gloo Pe
+secret:
+   dev1_password:
+      # decoded password is Pa$$w0rd
+      password: JDJhJDEwJFI0RGQwNE1TUTlDSnptOFZYQy5IVE9janBJenplSXRwaW1NVFgxL2p1bWJZSHpXcnNpQ29h
