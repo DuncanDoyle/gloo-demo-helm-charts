@@ -1,6 +1,6 @@
 # Gloo Platform Portal Demo DevPortal-UI
 
-A simple Helm chart which installs the Gloo Portal Platform DevPortal UI for PoC, Workshops and Demo environments.
+A simple Helm chart which installs the Gloo Platform Portal DevPortal UI for PoC, Workshops and Demo environments.
 
 ## Install
 
