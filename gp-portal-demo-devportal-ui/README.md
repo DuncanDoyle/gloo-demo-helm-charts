@@ -1,6 +1,8 @@
 # Gloo Platform Portal Demo DevPortal-UI
 
-## Running the chart:
+A simple Helm chart which installs the Gloo Portal Platform DevPortal UI for PoC, Workshops and Demo environments.
+
+## Install
 
 First, add the `ddoyle-gloo-demo` Helm repo to your repository list:
 ```
@@ -11,6 +13,8 @@ And install using the following command:
 ```
 helm install gp-portal-demo-devportal-ui ddoyle-gloo-demo/gp-portal-demo-devportal-ui --namespace gloo-mesh-addons --version 0.1.0
 ```
+
+## Uninstall
 
 To uninstall, simply run:
 ```
