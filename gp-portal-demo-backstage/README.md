@@ -11,7 +11,7 @@ helm repo add ddoyle-gloo-demo https://duncandoyle.github.io/gloo-demo-helm-char
 
 And install using the following command:
 ```
-helm install gp-portal-demo-backstage ddoyle-gloo-demo/gp-portal-demo-backstage --namespace backstage --version 0.1.0
+helm install gp-portal-demo-backstage ddoyle-gloo-demo/gp-portal-demo-backstage --namespace backstage --version 0.1.1
 ```
 
 ## Uninstall
