@@ -1,0 +1,8 @@
+## Backstage
+portal_server:
+  url:  http://developer.example.com/v1/
+oauth:
+  client_id: portal-client
+  token_endpoint: http://keycloak.example.com/realms/master/protocol/openid-connect/token
+  auth_endpoint: http://keycloak.example.com/realms/master/protocol/openid-connect/auth
+  logout_endpoint: http://keycloak.example.com/realms/master/protocol/openid-connect/logout
