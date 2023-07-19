@@ -2,15 +2,19 @@
 
 ## Running the chart:
 
-Install using the following Helm command.
-
+First, add the `ddoyle-gloo-demo` Helm repo to your repository list:
 ```
-$ helm install gp-portal-demo-devportal-ui .
+helm repo add ddoyle-gloo-demo https://duncandoyle.github.io/gloo-demo-helm-charts
+```
+
+And install using the following command:
+```
+helm install gp-portal-demo-devportal-ui ddoyle-gloo-demo/gp-portal-demo-devportal-ui --namespace gloo-mesh-addons --version 0.1.0
 ```
 
 To uninstall, simply run:
 ```
-$ helm uninstall gp-portal-demo-devportal-ui .
+$ helm uninstall gp-portal-demo-devportal-ui --namespace gloo-mesh-addons
 ```
 
 ## Configuring the DevPortal UI
