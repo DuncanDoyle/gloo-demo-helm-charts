@@ -11,7 +11,7 @@ helm repo add ddoyle-gloo-demo https://duncandoyle.github.io/gloo-demo-helm-char
 
 And install using the following command:
 ```
-helm install gp-portal-demo-devportal-ui ddoyle-gloo-demo/gp-portal-demo-devportal-ui --namespace gloo-mesh-addons --version 0.1.0
+helm install gp-portal-demo-devportal-ui ddoyle-gloo-demo/gp-portal-demo-devportal-ui --namespace gloo-mesh-addons --version 0.1.1
 ```
 
 ## Uninstall

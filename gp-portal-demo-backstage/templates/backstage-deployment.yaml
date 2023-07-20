@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: backstage
-          image: duncandoyle/backstage-gloo:1.0.0
+          image: duncandoyle/backstage-gloo:1.0.1
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
