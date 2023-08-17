@@ -3,6 +3,13 @@ portal_server:
   url:  http://developer.example.com/v1/
 oauth:
   client_id: portal-client
+  client_secret: 0LfNaPzip1RImEeAh2LK396GG8P4PzW5
   token_endpoint: http://keycloak.example.com/realms/master/protocol/openid-connect/token
   auth_endpoint: http://keycloak.example.com/realms/master/protocol/openid-connect/auth
   logout_endpoint: http://keycloak.example.com/realms/master/protocol/openid-connect/logout
+  sa_username: user1@example.com
+  sa_password: password
+gp_portal_plugin:
+  debug_logging: false
+
+
