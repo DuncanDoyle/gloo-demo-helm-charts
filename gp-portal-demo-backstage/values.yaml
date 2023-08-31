@@ -7,9 +7,12 @@ oauth:
   token_endpoint: http://keycloak.example.com/realms/master/protocol/openid-connect/token
   auth_endpoint: http://keycloak.example.com/realms/master/protocol/openid-connect/auth
   logout_endpoint: http://keycloak.example.com/realms/master/protocol/openid-connect/logout
-  sa_username: user1@example.com
-  sa_password: password
+  sa_client_id: portal-sa
+  sa_client_secret: WowCYdKHpVKxhXG8IbeN0W70OnMsXFTV
 gp_portal_plugin:
   debug_logging: false
+kubernetes:
+  url: https://kubernetes.default
+  skipTLSVerify: false
 
 

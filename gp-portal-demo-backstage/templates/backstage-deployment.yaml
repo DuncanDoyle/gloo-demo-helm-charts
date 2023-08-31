@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: backstage
-          image: duncandoyle/backstage-gloo:1.0.2
+          image: duncandoyle/backstage-gloo:1.0.3
           imagePullPolicy: Always
           ports:
             - name: http
@@ -32,19 +32,27 @@ spec:
             value: "{{ .Values.oauth.logout_endpoint }}"
           - name: "CLIENT_ID"
             value: "{{ .Values.oauth.client_id }}"
-          - name: "CLIENT_SECRET"
-            value: "{{ .Values.oauth.client_secret }}"
           - name: "LOG_LEVEL"
             value: "debug"
           - name: "GPP_PLUGIN_DEBUG_LOGGING"
             value: "{{ .Values.gp_portal_plugin.debug_logging}}"
-          - name: "SA_USERNAME"
-            value: "{{ .Values.oauth.sa_username}}"
-          - name: "SA_PASSWORD"
-            value: "{{ .Values.oauth.sa_password}}"
+          - name: "SA_CLIENT_ID"
+            value: "{{ .Values.oauth.sa_client_id}}"
+          - name: "KUBERNETES_API_SERVER_URL"
+            value: "{{ .Values.kubernetes.url}}"
+          - name: "KUBERNETES_SKIP_TLS_VERIFY"
+            value: "{{ .Values.kubernetes.skipTLSVerify}}"
+          - name: "KUBERNETES_SERVICE_ACCOUNT_TOKEN"
+            valueFrom:
+              secretKeyRef:
+                name: backstage-kube-sa-secret
+                key: token
           envFrom:
             - secretRef:
                 name: postgres-secrets
+            - secretRef:
+                name: portal-sa-client-secret
+            
             # - secretRef:
             #     name: backstage-secrets
             # # - secretRef:
