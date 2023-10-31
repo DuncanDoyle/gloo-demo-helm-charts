@@ -7,12 +7,12 @@ spec:
   displayName: Petstore Portal
   description: The Gloo Portal for the Petstore API
   # Image formats PNG, JPG and GIF are supported. SVG format is NOT supported at this time.
-  banner:
-    fetchUrl: https://i.imgur.com/FThdBv8.png
-  favicon:
-    fetchUrl: https://i.imgur.com/RepvURn.png
-  primaryLogo:
-    fetchUrl: https://i.imgur.com/rTKtJhO.png
+  # banner:
+  #   fetchUrl: https://i.imgur.com/FThdBv8.png
+  # favicon:
+  #   fetchUrl: https://i.imgur.com/RepvURn.png
+  # primaryLogo:
+  #   fetchUrl: https://i.imgur.com/rTKtJhO.png
   customStyling: {}
   staticPages: []
 
