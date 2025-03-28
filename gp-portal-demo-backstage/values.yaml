@@ -4,9 +4,9 @@ portal_server:
 oauth:
   client_id: portal-client
   client_secret: 0LfNaPzip1RImEeAh2LK396GG8P4PzW5
-  token_endpoint: http://keycloak.example.com/realms/master/protocol/openid-connect/token
-  auth_endpoint: http://keycloak.example.com/realms/master/protocol/openid-connect/auth
-  logout_endpoint: http://keycloak.example.com/realms/master/protocol/openid-connect/logout
+  token_endpoint: http://keycloak.example.com/realms/gloo-demo/protocol/openid-connect/token
+  auth_endpoint: http://keycloak.example.com/realms/gloo-demo/protocol/openid-connect/auth
+  logout_endpoint: http://keycloak.example.com/realms/gloo-demo/protocol/openid-connect/logout
   sa_client_id: portal-sa
   sa_client_secret: WowCYdKHpVKxhXG8IbeN0W70OnMsXFTV
 gp_portal_plugin:
